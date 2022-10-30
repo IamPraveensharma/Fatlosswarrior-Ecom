@@ -1,0 +1,713 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;  
+ 
+}
+
+.section-p1{
+padding: 40px 80px;
+}
+#header { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px ;
+    background-color:black;
+    box-shadow:0px 5px 15px rgba(255, 255, 255, 0.2);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar{
+display: flex;
+align-items: center;
+justify-content:center;
+}
+ 
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: antiquewhite;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height:2px;
+    background-color: antiquewhite;
+    position:absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
+
+/*HOME PAGE */
+
+#hero{
+    color: gray;
+    background-image:url(/E-commercewebsite/images/homef.png);
+    height:90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0%;
+    padding:0 80px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+
+}
+#hero h4{
+    color:azure;
+}
+#hero h2{
+    color: azure;
+}
+#hero h1{
+    color:orange;
+}
+#hero p{
+    color: bisque;
+}
+#hero button{
+    background-image: url(/E-commercewebsite/images/button4.png); 
+    background-color:transparent;
+    
+    border: 0;
+    padding: 25px ;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    font-weight: 700;
+    font-size: 15px;
+    background-size:contain;
+    background-position:center ;
+}
+#features{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#features .fe-box{
+    background-color: black;
+    text-align: center;
+    width:180px;
+    padding:25px 15px;
+    box-shadow: 20px 20px 34px rgba(255, 253, 253, 0.3);
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+    margin: 15px 0;
+    
+}
+#features .fe-box h6{
+    color: black;
+    background-color:rgb(250, 232, 198);
+    padding: 6px;
+    margin: 15px;
+    font-size: 12px;
+}
+#features .fe-box:hover{
+    box-shadow: 10px 10px 64px rgba(255, 253, 253, 0.3);
+
+}
+#features .fe-box img{
+    margin-bottom: 15px;
+}
+#product{
+    text-align: center;
+     background-color: black; 
+    color:antiquewhite;
+}
+#product .procon{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+#product .pro1{
+    padding: 15px 12px;
+    width: 30%;
+    min-width: 250px;
+    cursor: pointer;
+    box-shadow: 20px 20px 34px rgba(140, 245, 251, 0.25);
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position:relative; 
+    
+}
+#product .pro1:hover{
+    box-shadow:10px 10px 64px rgba(255, 253, 253, 0.3);;
+
+}
+
+#product .pro1 img{
+    width: 100%;
+    border-radius: 20px;
+
+}
+#product .pro1 .des{
+    text-align: start;
+    color:antiquewhite;
+    font-size: 15px;
+    padding: 8px 0px;
+
+}
+#product .pro1 .des h5{
+    font-size: 20px;
+    color: orange;
+}
+#product .pro1 .des i{
+    color:yellow;
+}
+
+
+#product .pro1 a{
+    height:40px;
+    width:40px;
+    line-height:40px;
+    border-radius:50px;
+    background-color:gold;
+    font-weight:500;
+    color: black;
+    border:1px solid gray;
+    position: absolute;
+    margin-left: 100px;
+    margin-top:-45px;
+
+}
+#product .pro1 h4{
+    color: aquamarine;
+    text-align: start;
+}
+
+
+#banner{
+box-shadow:2px 0px 0px 0px;
+position: relative;
+}
+#banner h2{
+color: antiquewhite;
+font-size: 45px;
+padding: 20px 20px;
+position: absolute;
+margin: 50px;
+margin-left:250px;
+text-align: center;
+}
+#banner a{
+position: absolute;
+margin:120px 520px;
+padding: 15px;
+color: bisque;
+}
+#banner a:hover{
+    color:rgb(255, 188, 163);
+}
+#banner span{
+    color:orange ;
+}
+
+/* SHOP PAGE */
+
+#pagehead{
+    position: relative;
+}
+
+#pagehead h2{
+    position: absolute; 
+    color: rgb(162, 111, 17);
+    margin: 85px 475px;
+    font-size: 60px;
+    text-align: center;
+
+}
+#pagehead p{
+    color: seagreen;
+    position: absolute;
+    margin: 165px 500px;
+    padding: 5px;
+    text-align: center;
+}
+
+#pagination{
+    background-color: black;
+    text-align: center;
+}
+#pagination a{
+     text-decoration:none;
+    padding: 10px 15px;
+    margin:0px 10px;
+    border: 1px solid gray;
+    color: black;
+    background-color: gold;
+    font-size: 15px;
+}
+
+/* SINGLE-IMAGE */
+#prodetail{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+    background-color: black;
+
+}
+
+
+#prodetail .singlebigimage img{
+    width:60%;
+    border: 1px solid wheat;
+    padding:4px;
+}
+#prodetail .smallimages{
+width: 60%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+ .smallingco1 img{
+    border: 1px solid wheat;
+    padding:4px; 
+    margin: 1px 1px;
+    cursor: pointer;
+}
+#prodetail .singlebigdetails{
+    margin: 5px;
+
+}
+#prodetail .singlebigdetails h6{
+    font-size: 16px;
+    color: bisque;
+    margin:10px 0px;
+    
+}
+#prodetail .singlebigdetails h4{
+    font-size: 24px;
+    color: bisque;
+    margin:10px 0px;
+}
+#prodetail .singlebigdetails h2{
+    font-size: 16px;
+    color: greenyellow;
+    margin:10px 0px;
+}
+#prodetail .singlebigdetails span{
+    font-size: 16px;
+    color: bisque;
+    margin:10px 0px;
+    line-height: 25px;
+    
+}
+#prodetail .singlebigdetails button{
+border:1px solid gray;
+background-color: gold;
+color: black;
+font-size: 15px;
+padding:8px 20px;
+}
+#prodetail .singlebigdetails input{
+    border:1px solid gray;
+background-color:whitesmoke;
+color: black;
+font-size: 15px;
+padding:8px 5px;
+
+}
+
+/* VIDEO PAGE  */
+#vidhead{
+    position:relative;
+}
+
+#vidhead .vid h2{
+    position:absolute;
+    margin-top:40px;
+    margin-left:200px;
+    color: black;
+    font-size:70px;
+}
+#vidhead .vid p{
+    position:absolute;
+    color:rgb(108, 71, 2);
+    padding: 10px;
+    margin-top:130px;
+    margin-left:380px;
+    font-size: 30px;
+}
+.vidplay{
+    margin:0px;
+    padding:0px;
+    position:relative;
+    box-sizing: border-box;
+}
+.slidetext{
+    position:absolute;
+    margin-top: 70px;
+    
+}
+.vidplay h2{
+    margin-top: 40px;
+    margin-left: 320px;
+    color: gold;
+    font-size: 60px;
+    padding:10px;
+    
+}
+.back{
+    background-color: black;
+}
+#videocontainer{
+   width: 60%;
+   height: 400px;
+   border: 2px solid wheat;
+   box-shadow: 10px 10px 6px rgba(255, 255, 255, 0.2);
+   margin:auto;
+   margin-top: 10px;
+   margin-bottom: 50px;  
+   position: relative;
+   overflow: hidden;
+}
+.vidplay button {
+    font-size: 20px;
+    padding:10px 15px;
+    color: black;
+    background-color: gold;
+    position: absolute;
+    cursor: pointer;
+}
+.next{
+margin-left:1050px;
+margin-top:190px;
+}
+
+.prev{
+    margin-left:160px;
+    margin-top:190px;
+} 
+
+#videocontainer iframe{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+ /* #videocontainer .frame{
+    position:relative;
+   background-color: black; 
+} 
+
+
+     
+}     
+/* }
+/* 
+#videocontainer .frame .next button{
+    color:black;
+    background-color: orange;
+    padding: 3px 6px;
+    margin-left:400px;
+    margin-top:30px;
+    font-size:20px;
+ */
+
+
+
+ /* CONTACT US PAGE */
+ 
+#contacthead{
+    position: relative;
+}
+
+#contacthead h2{
+    position: absolute; 
+    color: rgb(162, 111, 17);
+    margin: 85px 430px;
+    font-size: 60px;
+    text-align: center;
+
+}
+#contacthead p{
+    color: seagreen;
+    position: absolute;
+    margin: 165px 500px;
+    padding: 15px;
+    text-align: center;
+}
+#contdetail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: bisque;
+    background-color: black;
+}
+#contdetail .contactdetail span{
+    font-size: 30px;
+}
+#contdetail .contactdetail h2{
+    font-size: 60px;
+    color: orange;
+}
+#contdetail .contactdetail h3{
+    font-size: 40px;
+    color: bisque;
+}
+#contdetail .contactdetail .icons li{
+   list-style: none;
+   display: flex;
+    align-items: flex-start;
+    padding: 15px;
+}
+#contdetail .contactdetail .icons li i{
+     font-size: 14px;
+     padding-right: 15px;
+     color: gold;
+ }
+#contdetail .contactdetail .icons li p{
+    padding: 0px;
+}
+#contdetail .map{
+ border: 4px solid bisque;
+ padding:3px;
+ margin:auto;
+ width:514px;
+ height:364px;
+}
+#formdetails{
+    background-color: black;
+}
+#formdetails form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+   padding: 30px;
+   color: bisque;
+
+}
+#formdetails form span{
+    font-size: 25px;
+}
+#formdetails form h2{
+    font-size: 50px;
+    color: orange;
+}
+#formdetails form input{
+    margin: 13px 0px;
+   
+}
+#formdetails form button{
+    border: 2px solid rgb(186, 158, 0);
+    font-size: 15px;
+    color: black;
+    background-color: gold;
+    width: 80px;
+    height: 40px;
+    margin:13px 0px;
+}
+#formdetails form textarea{
+    margin: 13px 0px; 
+}
+
+
+#contactbanner{
+box-shadow:2px 0px 0px 0px;
+position: relative;
+}
+#contactbanner h2{
+color: rgb(244, 240, 241);
+font-size: 60px;
+padding: 20px 20px;
+position: absolute;
+margin: 50px;
+margin-left:240px;
+text-align: center;
+}
+#contactbanner span{
+    color:orange ;
+}
+
+/* CART PAGE */
+
+#carthead{
+    position: relative;
+    
+}
+
+#carthead h2{
+    position: absolute; 
+    color: rgb(162, 111, 17);
+    margin: 60px 320px;
+    font-size: 80px;
+    text-align: center;
+}
+#carthead p{
+    color: rgb(8, 102, 48);
+    position: absolute;
+    margin: 165px 490px;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+}
+#cart{
+    color: bisque;
+}
+
+#cart table{
+    width:100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart table img{
+    width: 70px;
+    border: 0.5px solid wheat;
+    padding:0.5px;
+}
+#cart table td:nth-child(1) {
+    width:100px;
+    text-align: center;
+}
+#cart table td:nth-child(1) i{
+    color: bisque;
+    font-size:25px;
+}
+#cart table td:nth-child(2) {
+    width:150px;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width:250px;
+    text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width:150px;
+    text-align: center;
+}
+#cart table thead{
+    border: 1px solid gold;
+    border-left: none;
+    border-right: none;
+    padding: 25px 0px;
+}
+#cart table thead td{ 
+text-transform: uppercase;
+font-size: 18px;
+padding:12px;
+}
+#cart table tbody td{ 
+padding: 15px;
+font-weight: 700;
+}
+#cart table tbody td:nth-child(5) input{
+    width:65px;
+}
+#cartadd{
+    display:flex;
+    color: bisque;
+    align-items: center;
+    justify-content: space-between;
+}
+#cartadd .coupon h3{
+    color: orange;
+    font-size: 30px;
+    padding:10px 0px;
+}
+#cartadd .coupon input{
+border:none;
+padding:8px;
+width: 250px;
+}
+#cartadd .coupon button{
+    background-color: gold;
+    font-size:16px;
+    padding:6px;
+    }
+    #subtotal{
+        width: 50%;
+        border: 2px solid gold;
+        border-collapse: collapse;
+        width: 50%;
+        margin:20px;
+    }
+    #subtotal h3{
+        color:orange;
+        font-size: 50px;
+        padding:2px 10px;
+    }
+    #subtotal table{
+        border: 2px solid wheat;
+        margin: 20px;
+    }
+    
+    #subtotal table td{
+    padding: 30px;
+    border: 2px solid wheat;
+    font-size: 24px;
+    padding: 0px 80px;
+ }
+    #subtotal table tr{
+     width: 80%;
+    padding: 10px;
+    border: 2px solid wheat;
+      }
+      #subtotal button{
+        background-color: gold;
+        font-size:18px;
+        padding:6px;
+        margin-left: 320px;
+        margin-bottom:15px;
+        margin-right:15px;
+        font-weight: 600;
+        }
+    
+#cartbanner{
+    box-shadow:2px 0px 0px 0px;
+    position: relative;
+    }
+    #cartbanner h2{
+    color: wheat;
+    font-size: 53px;
+    padding: 20px 20px;
+    position: absolute;
+    margin: 35px;
+    margin-left:260px;
+    text-align: center;
+    }
+    #cartbanner span{
+        color:yellowgreen ;
+    }
+
+     /* Start media query  */
+
+/* 
+    /* @media (max-width:799px) {
+     body{
+        overflow: hidden;
+     }
+        #navbar {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;  
+            
+        }
+        
+    }  */ 
